@@ -7,3 +7,17 @@ docker image ls
 shows:
 REPOSITORY        TAG         IMAGE ID       CREATED       SIZE
 peterdawhiz/gsd   first-ctr   89fb57a3f121   5 hours ago   181MB
+
+#Login to docker hub
+docker login
+
+#Push an image to docker hub
+
+docker push image peterdawhiz/gsd:first-ctr
+
+#delete a local docker image
+
+docker image rm peterdawhiz/gsd:first-ctr
+
+#run docker container
+docker container run -d --name web -p 8000:8080 peterdawhiz/gsd:first-ctr

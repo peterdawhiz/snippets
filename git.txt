@@ -12,3 +12,7 @@ git remote add <repository_name>  <REMOTE_URL>
 
 #Push changes(subsequent changes)
 git push <repository_name> master
+
+#Clone an existing repository
+
+git clone <repository_name>
