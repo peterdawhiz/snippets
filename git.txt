@@ -1,0 +1,14 @@
+#create a repository on a folder(with master branch)
+git init -b master
+
+#Add files in the repository folder
+git add.
+
+#Commit changes on the repository
+git commit -m "<a short narration of the changes>"
+
+#Push changes to a github (first time)
+git remote add <repository_name>  <REMOTE_URL>
+
+#Push changes(subsequent changes)
+git push <repository_name> master
