@@ -1,5 +1,5 @@
 #Build a docker image
-docker image build -t peterdawhiz/gsd:first-ctr
+docker image build -t peterdawhiz/gsd:first-ctr .
 
 #List image from a repository
 docker image ls
