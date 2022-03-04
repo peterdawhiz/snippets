@@ -19,5 +19,30 @@ docker push image peterdawhiz/gsd:first-ctr
 
 docker image rm peterdawhiz/gsd:first-ctr
 
-#run docker container
-docker container run -d --name web -p 8000:8080 peterdawhiz/gsd:first-ctr
+#run docker container in background
+docker container run -d --name <container_name> -p 8000:8080 peterdawhiz/gsd:first-ctr
+
+#run docker container interactively
+docker container run -it --name <container_name> <os_image_name> sh
+
+# Gracefully exit from a container running interactively
+CTRL + P + Q
+
+# Remove a container
+docker container rm <container_name> -f
+
+#stop/exit a container
+
+docker container stop <container_name>
+
+#List a container
+docker container ls -a
+
+#start a container
+docker container start <container_name>
+
+#stop a container
+docker container stop <container_name>
+
+#remove a container
+docker container rm <container_name>
