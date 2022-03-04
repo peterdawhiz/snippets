@@ -1,0 +1,2 @@
+#create a Laravel application
+curl -s https://laravel.build/<app_name> | bash
