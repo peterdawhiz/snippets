@@ -1,2 +1,9 @@
 #Build a docker image
 docker image build -t peterdawhiz/gsd:first-ctr
+
+#List image from a repository
+docker image ls
+
+shows:
+REPOSITORY        TAG         IMAGE ID       CREATED       SIZE
+peterdawhiz/gsd   first-ctr   89fb57a3f121   5 hours ago   181MB
